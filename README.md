@@ -18,6 +18,10 @@ Nodejs postgresql package: installable by
 ```
 $ npm install pg
 ```
+Node dotenv:
+```
+$ npm install dotenv
+```
 ## Setting up PostgreSQL
 To set up postgres you should first have it installed which you can find [here](https://www.postgresql.org/download/)
 Once this is installed you can run the following commands:
@@ -49,6 +53,13 @@ Inside the `.env` file it should look like:
 TOKEN=[your_bot_token]
 ```
 You will need to replace the `[your_bot_token]` with your own bot's token.
+
+As well as this in the `index.js` file you should have the following lines as your last 3
+```js
+const dotenv = require('dotenv');
+dotenv.config();
+client.login(`${process.env.TOKEN}`);
+```
 
 ### Actually running it
 On your command line make sure that you are in the correct directory and once you are run the command: 
