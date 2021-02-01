@@ -6,7 +6,7 @@ module.exports = {
     description: 'Works for money',
     usage: 'work',
     cooldown: 1800,
-	execute(message, args) {
+	execute(message, args, client) {
         var value = Math.floor(Math.random()*1000)
         if (value > 501) {
             value += 450

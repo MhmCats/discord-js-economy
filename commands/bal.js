@@ -6,7 +6,7 @@ module.exports = {
     description: 'Checks your balance',
     usage: 'balance',
     cooldown: 1,
-	execute(message, args) {
+	execute(message, args, client) {
         (async () => {
             if (!await read(message.author.id)) {
                 const balanceEmbedWithNone = new Discord.MessageEmbed()

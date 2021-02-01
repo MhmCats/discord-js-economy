@@ -6,7 +6,7 @@ module.exports = {
     description: 'Claims daily for money',
     usage: 'daily',
     cooldown: 86400,
-	execute(message, args) {
+	execute(message, args, client) {
         var value = Math.floor(Math.random()*2000)
         if (value < 805) {
             value += 450

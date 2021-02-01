@@ -5,7 +5,7 @@ module.exports = {
     description: 'Ping!',
     usage: 'ping',
     cooldown: 1,
-	execute(message, args) {
+	execute(message, args, client) {
 		const pingEmbed = new Discord.MessageEmbed()
             .setColor('#fdfbfb')
             .setDescription(`Bot Latency: ${Date.now() - message.createdTimestamp}ms`)

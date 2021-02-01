@@ -9,7 +9,6 @@ module.exports = {
                 `SELECT balance FROM balance WHERE user_id=$1`,
                 [user_id]
             );
-            console.log(res)
             for (let row of res.rows) {
                 return (row['balance']);
             }
@@ -40,7 +39,6 @@ module.exports = {
                 await client.query(query);
             }
         }
-        console.log(query)
     },
     connect: function () {
         client = new Client({

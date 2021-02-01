@@ -6,16 +6,13 @@ module.exports = {
 	aliases: ['commands'],
 	usage: 'help',
 	cooldown: 5,
-	execute(message, args) {
+	execute(message, args, client) {
         const helpEmbed = new Discord.MessageEmbed()
             .setColor('#fdfbfb')
             .setAuthor('Help', iconURL=message.author.avatarURL())
             .addFields(
-                {name: 'General Commands', 
-                 value:`\`help\`, \`ping\``,
-                 inline: true},
                 {name: ':gear: Information Commands :gear:', 
-                 value:`\`info\`, \`userinfo\`, \`serverinfo\``,
+                 value:`\`info\`, \`help\`, \`ping\``,
                  inline: true},
                 {name: ' :moneybag: Economy Commands  :moneybag:', 
                  value:`\`balance\`, \`beg\`, \`work\`, \`bet\``},

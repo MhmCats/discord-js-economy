@@ -22,6 +22,7 @@ for (const file of commandFiles) {
 
 client.once('ready', () => {
 	console.log('\nReady!');
+	client.user.setPresence({ activity: { name: `Watching out for +help` }, status: 'online' });
 	connect()
 });
 
@@ -57,7 +58,7 @@ client.on('message', message => {
 	setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
 	
 	try {
-	    command.execute(message, args);
+	    command.execute(message, args, client);
     } catch (error) {
 	    console.error(error);
     }
