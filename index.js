@@ -63,5 +63,6 @@ client.on('message', message => {
     }
 });
 
-
-client.login(process.env.TOKEN);
+const dotenv = require('dotenv');
+dotenv.config();
+client.login(`${process.env.TOKEN}`);
