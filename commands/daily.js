@@ -13,7 +13,7 @@ module.exports = {
         };
         write(message.author.id, value);
         workEmbed = new Discord.MessageEmbed()
-            .setDescription(`You worked and got \`${value}\` coins`)
+            .setDescription(`You claimed your daily and got \`${value}\` coins`)
             .setColor('#fdfbfb')
         message.channel.send(workEmbed)       
     }
