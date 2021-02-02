@@ -1,12 +1,12 @@
 # JavaScript Economy Bot
 
 ## Contents
-1. [Packages used](https://github.com/MhmCats/discord-js-economy/new/main?readme=1#packages-used)
-2. [Setting up PostgreSQL](https://github.com/MhmCats/discord-js-economy/new/main?readme=1#setting-up-postgresql)
-3. [Getting it to run](https://github.com/MhmCats/discord-js-economy/new/main?readme=1#gettingg-it-to-run)
-4. [Actually running it](https://github.com/MhmCats/discord-js-economy/new/main?readme=1#actually-running-it)
-5. [Configuration](https://github.com/MhmCats/discord-js-economy/new/main?readme=1#configuration)
-6. [Why I made this](https://github.com/MhmCats/discord-js-economy/new/main?readme=1#why-i-made-this)
+1. [Packages used](https://github.com/MhmCats/discord-js-economy/blob/main/README.md#packages-used)
+2. [Setting up PostgreSQL](https://github.com/MhmCats/discord-js-economy/blob/main/README.md#setting-up-postgresql)
+3. [Getting it to run](https://github.com/MhmCats/discord-js-economy/blob/main/README.md#gettingg-it-to-run)
+4. [Actually running it](https://github.com/MhmCats/discord-js-economy/blob/main/README.md#actually-running-it)
+5. [Configuration](https://github.com/MhmCats/discord-js-economy/blob/main/README.md#configuration)
+6. [Why I made this](https://github.com/MhmCats/discord-js-economy/blob/main/README.md#why-i-made-this)
 
 ## Packages used
 The discord.js package: installable by 
