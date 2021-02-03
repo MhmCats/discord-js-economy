@@ -24,11 +24,10 @@ $ npm install dotenv
 ```
 ## Setting up PostgreSQL
 To set up postgres you should first have it installed which you can find [here](https://www.postgresql.org/download/)
-Once this is installed you can run the following commands:
+Once this is installed you can run the following commands and have the psql tool:
 ```
+$ create role [your_role_name] superuser
 $ createdb balance
-$ psql balance
-= CREATE ROLE [your_role_name] superuser
 = \password
 = CREATE TABLE balance(user_id text primary key, balance int not null);
 ```
